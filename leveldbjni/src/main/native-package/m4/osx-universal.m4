@@ -101,9 +101,9 @@ AC_DEFUN([WITH_OSX_UNIVERSAL],
       done
 
       
-      CFLAGS="-isysroot ${OSX_SDKS_DIR}/MacOSX${OSX_VERSION}.sdk $CFLAGS"
-      CXXFLAGS="-isysroot ${OSX_SDKS_DIR}/MacOSX${OSX_VERSION}.sdk $CXXFLAGS"
-      LDFLAGS="-syslibroot,${OSX_SDKS_DIR}/MacOSX${OSX_VERSION}.sdk $LDFLAGS"
+      CFLAGS="-isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX${OSX_VERSION}.sdk $CFLAGS"
+      CXXFLAGS="-isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX${OSX_VERSION}.sdk $CXXFLAGS"
+      LDFLAGS="-syslibroot,/Library/Developer/CommandLineTools/SDKs/MacOSX${OSX_VERSION}.sdk $LDFLAGS"
       AC_SUBST(CFLAGS)
       AC_SUBST(CXXFLAGS)
       AC_SUBST(LDFLAGS)
